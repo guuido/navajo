@@ -1,0 +1,17 @@
+[project]
+name = "navajo"
+requires-python = ">=3.8"
+version = "0.1.0"
+description = "A lightweight ASGI server with no dependencies"
+
+[project.optional-dependencies]
+
+dev = [
+  "pytest",
+  "pytest-asyncio"
+]
+
+[tool.pytest.ini_options]
+testpaths = "test"
+asyncio_default_fixture_loop_scope = "function"
+
